@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+
+        <title>Cadastro - BITCODE</title>
+        
+        <!-- Loading Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Loading código CSS -->
+        <link href="css/style.css" rel="stylesheet" media="screen and (color)">
+
+        <!-- Awsome Fonts -->
+        <link href="css/all.min.css" rel="stylesheet">
+
+        <!-- Favicon -->
+        <link href="images/favicon-bitcode.png" rel="shortcut icon">
+    </head>
+
+    <body>
+        <!--Begin Header-->
+        <header class="header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+
+                        <!--begin logo -->
+                        <a href="#home" rel="home">
+                            <img class="logomenu" src="images/logo-negativo.png" alt="BIT CODE" title="Bit Code">
+                        </a>
+                        <!--end logo -->
+                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i class="fas fa-bars"></i>
+                            </span>
+                        </button>
+
+                        <div class="navbar-collapse collapse" id="navbarCollapse">
+                            <ul class="navbar-nav ml-auto left-menu">
+                                 <li><a href="#home">Home</a></li>
+                                <li><a href="#sobre">Sobre o Projeto</a></li>
+                                <li><a href="#atendimento">Atendimento</a></li>
+                            </ul> 
+                            <div><a class="btn btn-menu" href="#" role="button"><img class="imgperfil" src="images/perfil.svg"> Cadastro</a></div>
+                        </div>
+                    </nav>
+                </div>  
+            </nav>
+        </header>
+        <!--End Header-->
+
+
+        <!-- --------------- CONTEÚDO DA PÁGINA ----------------->
+
+        <!-- Begin Section 12 -->
+        <section class="section12" id="login">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="blocklogin">
+                            <div class="sec12blocoimg">
+                                <img  class="sec12imgmob" src="images/logo-negativo.png">
+                            </div>
+                            <h2 class="sec12title">Bem-vindos!</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Seu Nome</label>
+                                    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu nome">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">E-mail</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Senha</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Salvar senha?</label>
+                                </div>
+                                <div><p class="sec12ph1">Ao registrar um email, você consente em receber notificações de segurança automatizadas por mensagem de 
+                                texto da BitCode. Seu email não será compartilhado com terceiros ou afiliados para fins sem sua permissão. 
+                                Remova seu email em Seu Perfil e Segurança para cancelar. Para mais informações, visite o site da BitCode. 
+                                Podem ser aplicadas taxas de mensagem e dados. A frequência das mensagens varia.</p></div>
+                                <div class="blockesqueceusenha">
+                                    <a class="btn btnforms1" href="#" role="button">Esqueceu sua senha?</a>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Logar</button>
+                                <div class="blockcadastrar">
+                                    <p class="secloginphform">Já possui uma conta?</p>
+                                    <a class="btn btnforms2" href="#" role="button">Entrar</a>
+                                </div> 
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </section>
+        <!-- End Section login -->
+
+
+       
+        <!-- Begin footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="footerp1">
+                            © <span id="footer-year"></span> © Todos os direitos reservados - BitCode </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End footer-->
+
+
+        <!-- Load JS =============================-->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.scrollTo-min.js"></script>
+        <script src="js/jquery.nav.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1542 @@
+/*
+Nome da Página HTML
+*/
+
+/* --- 
+Sequência do CSS Da Página: (use esses nomes a pesquisa rápida no código.)
+
+01. Geral
+02. Nav-Bar
+03. BEGIN PAGE HOME 
+    01. Section 01
+    02. Section 02
+    03. Section 03
+04. BEGIN PAGE CADASTRO
+    0.1 Section 04
+05. BEGIN PAGE SOBRE
+    01. Section 05
+    02. Section 06
+    03. Section 07
+06.BEGIN PAGE COMO
+    01. Section 08
+    02. Section 09
+07. BEGIN PAGE ATENDIMENTO
+    01. Section 10
+08. BEGIN PAGE LOGIN
+    01. Section 11
+09. BEGIN PAGE CADASTRAR
+    01. Section 12
+10. BEGIN PAGE SENHA
+    01. Section 13
+11. BEGIN PAGE LOCAL
+    01. Section 14
+
+
+
+07. Footer
+08. Media Queries
+
+
+
+/* ========================================================== */
+/* 			                01. BEGIN GERAL                       */
+/* ========================================================== */
+/*FONTS EMBEDADAS*/
+@font-face {
+  font-family:Poppins-Regular;
+  src: url("../webfonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family:Poppins-Bold;
+  src: url("../webfonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family:Poppins-Italic;
+  src: url("../webfonts/Poppins-Italic.ttf");
+}
+
+@font-face {
+  font-family:Poppins-Medium;
+  src: url("../webfonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family:Poppins-Black;
+  src: url("../webfonts/Poppins-Black.ttf");
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+ text-decoration: none;
+ outline: 0;
+}
+
+a:hover{
+ color: #E9F8DA;
+}
+/* ========================================================== */
+/*                       01 END GERAL                         */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 			            02. BEGIN NAV-BAR                         */
+/* ========================================================== */
+.navbar {
+ width: 100%;
+ z-index: 9999;
+ padding:4px 0;
+}
+
+.navbar-brand{
+ font-family: 'Poppins-Regular';
+ font-size: 28px;
+ font-weight: 100;
+ color: #000!important;
+}
+
+.navbar-toggler {
+ padding: 5px 10px;
+ font-size: 24px;
+ line-height: 1;
+ background-color: transparent;
+ border-radius: 6px;
+ border: 1px solid #fff;
+}
+
+.navbar-toggler-icon {
+ width: 1.3em;
+ height: 1.3em;
+}
+
+.navbar-toggler-icon i {
+ color: #fff;
+ vertical-align: middle;
+}
+
+.navbar-fixed-top {
+ position: absolute!important;
+ background-color: #038654!important;
+ box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04)!important;
+ border-bottom: none;
+ transition: background-color 0.25s ease 0s;
+}
+
+.navbar-fixed-top.opaque {
+ position: fixed!important;
+ background-color: #038654!important;
+ border-bottom: 0px solid #038654;
+ transition: all 0.25s ease-in-out 0s;
+}
+
+.navbar-fixed-top .navbar-nav > li > a, .navbar-fixed-top .navbar-nav > li > a:hover{
+ color: #E9F8DA!important;
+ -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ transition: all 0.5s ease;
+}
+
+.navbar-fixed-top .navbar-nav > li > a{
+ color: #fff !important;
+ font-size: 16px !important;
+ line-height: 10px !important;
+ padding: 10px 15px!important;
+ font-family: 'Poppins-Regular';
+ font-weight: 100;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+}
+
+.navbar-fixed-top .navbar-nav .current a {
+ color:#E9F8DA!important;
+ -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ transition: all 0.5s ease;
+}
+
+.navbar-fixed-top.opaque .navbar-nav .current a {
+ color:#E9F8DA!important;
+ -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ transition: all 0.5s ease;
+}
+
+.navbar-fixed-top .navbar-nav > li > a.discover-btn {
+ border: 1px solid #dd0d44;
+ color: #dd0d44!important;
+ background: transparent;
+ border-radius: 8px 8px;
+ padding: 12px 18px!important;
+ margin-left: 10px;
+ margin-right: 15px;
+ font-family:  'Poppins-Regular';
+}
+
+.navbar-fixed-top .navbar-nav > li > a.discover-btn:hover {
+ color: #fff!important;
+ background: #f6a206;
+ border: 1px solid #f6a206;
+}
+
+.navbar-expand-lg .navbar-collapse {
+ display: flex !important;
+ flex-basis: auto;
+ justify-content: flex-end;
+}
+.imgperfil{
+ width: 28%;
+}
+
+.btn-menu, .btn-menu:hover {
+ color: #fff;
+ background-color: #006941;
+ border-color: #006941;
+ padding: 0px !important;
+ border-radius: 25px;
+ font-family: 'Poppins-Regular';
+
+}
+
+.left-menu{
+   margin-right: 32px;
+}
+.logomenu{
+ width: 44%;
+}
+/* ========================================================== */
+/*                   02. END NAV-BAR                          */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 		             03. BEGIN PAGE HOME                        */
+/* ========================================================== */
+
+/*Begin Section 01*/
+.section01 {
+ position: relative;
+ padding-top: 108px;
+ padding-bottom: 26px;
+ background: #E9F8DA;
+ background-size: cover;
+ z-index: 10;
+ overflow: hidden;
+}
+.sec01titleh1{
+ font-family: 'Poppins-Bold';
+ font-size: 40px;
+ line-height: 52px;
+ margin: 0;
+ padding: 68px 0 10px 0;
+ text-align: left;
+ color: #038654;
+}
+.sec01ph1{
+ font-family: 'poppins-Regular';
+ font-size: 17px;
+ line-height: 26px;
+ text-align: justify;
+ padding: 0 72px 20px 0;
+ margin: 0;
+}
+
+.sec01ph2{
+ font-family: 'poppins-Regular';
+ font-size: 17px;
+ line-height: 26px;
+ text-align: left;
+ padding: 0 52px 20px 0;
+ margin: 0;
+}
+.sec01titleh2{
+ font-family: 'Poppins-Bold';
+ font-size: 26px;
+ line-height: 52px;
+ padding: 0 0 12px 0;
+ text-align: center;
+ color: #038654;
+ margin: 0 0 0 63px;
+}
+.sec01phinte{
+ font-family: 'Poppins-Bold';
+ font-size: 17px;
+ line-height: 26px;
+ margin: 0;
+ padding: 0px 0 20px 0;
+ text-align: center;
+}
+
+.bloco1, .bloco3{
+ text-align: left;
+ 
+}
+.bloco2, .bloco4{
+ text-align: right;
+ margin-top: -196px;
+ margin-bottom: 23px;
+}
+
+.card, .card2, .card3, .card4{
+ width: 18rem;
+}
+.card {
+ position: absolute;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-direction: column;
+ flex-direction: column;
+ min-width: 0;
+ word-wrap: break-word;
+ background-color: #e9f8da;
+ background-clip: border-box;
+ border: none;
+ border-radius: .25rem;
+}
+
+.card2 {
+ position: relative;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-direction: column;
+ flex-direction: column;
+ min-width: 0;
+ word-wrap: break-word;
+ background-color: #e9f8da;
+ background-clip: border-box;
+ border: none;
+ border-radius: .25rem;
+ align-content: flex-end;
+ right: -308px;
+}
+
+.card3 {
+ position: absolute;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-direction: column;
+ flex-direction: column;
+ min-width: 0;
+ word-wrap: break-word;
+ background-color: #e9f8da;
+ background-clip: border-box;
+ border: none;
+ border-radius: .25rem;
+}
+
+.card4 {
+ position: relative;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-direction: column;
+ flex-direction: column;
+ min-width: 0;
+ word-wrap: break-word;
+ background-color: #e9f8da;
+ background-clip: border-box;
+ border: none;
+ border-radius: .25rem;
+ align-content: flex-end;
+ right: -308px;
+}
+/*End Section 01*/
+
+/*Begin Section 02*/
+.section02 {
+ position: relative;
+ padding-top: 65px;
+ padding-bottom: 0px;
+ background: #fff;
+ /*background: url(../images/backsec02.jpg) top center no-repeat;*/
+ background-size: cover;
+ z-index: 10;
+ overflow: hidden;
+}
+
+.sec02title1{
+ font-family: 'Poppins-Bold';
+ font-size: 40px;
+ line-height: 52px;
+ margin: 0;
+ text-align: center;
+ padding: 0 0 10px 0;
+ color: #038654;
+}
+.sec02ph1{
+ font-family: 'poppins-Regular';
+ font-size: 20px;
+ line-height: 29px;
+ text-align: center;
+ padding: 11px 156px 0px;
+ margin: 0 0 -125px 0;
+ position: relative;
+}
+/*End Section 02*/
+
+/*Begin Section 03*/
+.section03 {
+ position: relative;
+ padding-top: 56px;
+ padding-bottom: 60px;
+ background: #E9F8DA;
+ background-size: cover;
+ z-index: 10;
+ overflow: hidden;
+}
+
+.sec03titleh2{
+ font-family: 'Poppins-Bold';
+ font-size: 40px;
+ line-height: 52px;
+ padding: 0 0 41px 0;
+ text-align: center;
+ color: #038654;
+ margin: 0;
+}
+
+.sec03title{
+ font-family: 'Poppins-Bold';
+ font-size: 21px;
+ line-height: 30px;
+ margin: 0;
+ padding: 20px 0 5px 0;
+ text-align: center;
+ color: #038654;
+ }
+
+.sec03ph{
+ font-size: 16px;
+ line-height: 20px;
+ text-align: center;
+ padding: 0 3px 0;
+ margin: 0;
+ color: #000;
+ font-family: 'Poppins-Regular';
+}
+.sec03bloco1{
+ text-align: center;
+}
+.imgtm{
+ width: 90%;
+}
+/*End Section 02*/
+
+/*Begin Section 03*/
+
+/*End Section 03*/
+/* ========================================================== */
+/* 		             03. END PAGE HOME                          */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 		           04. BEGIN PAGE CADASTRO                      */
+/* ========================================================== */
+
+/*Begin Section 04*/
+.section04 {
+ position: relative;
+ padding-top: 130px;
+ padding-bottom: 35px;
+ background: #E9F8DA;
+ background-size: cover;
+ z-index: 10;
+ overflow: hidden;
+}
+.sec04titleh2{
+ font-family: 'Poppins-Bold';
+ font-size: 38px;
+ line-height: 52px;
+ margin: 0;
+ padding: 87px 0 10px 0;
+ text-align: left;
+ color: #038654;
+}
+.sec04ph1{
+ font-family: 'poppins-Regular';
+ font-size: 17px;
+ line-height: 26px;
+ text-align: left;
+ padding: 0 0px 46px 0;
+ margin: 0;
+}
+.btn-primary, .btn-primary:hover {
+ color: #fff;
+ background-color: #006941;
+ border-color: #006941;
+ font-family: 'Poppins-Regular';
+ font-size: 16px;
+ padding: 10px 20px;
+ border-radius: 35px;
+}
+
+.btn-second, .btn-second:hover {
+ color: #006941;
+ background-color: #00694100;
+ border-color: #00694100;
+ font-family: 'Poppins-Bold';
+ font-size: 16px;
+ padding: 10px 20px;
+ border-radius: 35px;
+ font-style: normal;
+ text-decoration: underline;
+}
+.sec04cadast{
+ margin: 12px 0 0 0;
+}
+.sec04imgecolog{
+ width: 100%;
+}
+/*End Section 04*/
+
+/* ========================================================== */
+/* 		               04. END PAGE CADASTRO                    */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 		                05. BEGIN PAGE SOBRE                    */
+/* ========================================================== */
+
+/*Begin Section 05*/
+.section05 {
+ position: relative;
+ padding-top: 108px;
+ padding-bottom: 26px;
+ background: #E9F8DA;
+ background-size: cover;
+ z-index: 10;
+ overflow: hidden;
+}
+
+.sec05titleh2 {
+ font-family: 'Poppins-Bold';
+ font-size: 40px;
+ line-height: 16px;
+ margin: 0;
+ padding: 38px 0 45px 0;
+ text-align: left;
+ color: #038654;
+}
+
+.sec05ph1 {
+ font-family: 'poppins-Regular';
+ font-size: 17px;
+ line-height: 26px;
+ text-align: left;
+ padding: 0px 0 20px 0;
+ margin: 0;
+}
+
+.sec05ph2{
+ font-family: 'poppins-Regular';
+ font-size: 17px;
+ line-height: 26px;
+ text-align: center;
+ padding: 35px 0px 15px 0;
+ margin: 0;
+}
+
+.sec05img1{
+ width: 100%;
+}
+/*End Section 05*/
+
+/*Begin Section 06*/
+.section06 {
+ position: relative;
+ padding-top: 55px;
+ padding-bottom: 26px;
+ background: #ffffff;
+ background-size: cover;
+ z-index: 10;
+ overflow: hidden;
+}
+
+.sec06titleh2{
+ font-family: 'Poppins-Bold';
+ font-size: 30px;
+ color: #038654;
+ margin: 0 0 20px 0;
+ padding: 0 0 0 0;
+}
+
+.sec06title{
+ font-family: 'Poppins-Bold';
+ font-size: 17px;
+ margin: 0;
+ padding: 15px 0 0 0; ;
+ color: #038654;
+}
+
+.sec06ph{
+ font-family: 'Poppins-Regular';
+ font-size: 15px;
+ margin: 0;
+ padding: 0 0 0 16px;
+}
+
+.sec06card, .sec06card2 {
+ width: 30rem;
+}
+
+.imgsec06{
+ width: 88%;
+}
+
+.sec06card3 {
+ position: relative;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-direction: column;
+ flex-direction: column;
+ min-width: 0;
+ word-wrap: break-word;
+ background-color: #fff;
+ background-clip: border-box;
+ border: none;
+ border-radius: .25rem;
+ align-content: flex-end;
+ right: -630px;
+ margin-top: -652px;
+ margin-bottom: 23px;
+}
+
+.sec06card4 {
+ position: relative;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-direction: column;
+ flex-direction: column;
+ min-width: 0;
+ word-wrap: break-word;
+ background-color: #fff;
+ background-clip: border-box;
+ border: none;
+ border-radius: .25rem;
+ align-content: flex-end;
+ right: -625px;
+}
+/*End Section 06*/
+
+/*Begin Section 07*/
+.section07{  
+ position: relative;
+ padding-top: 49px;
+ padding-bottom: 26px;
+ background: #E9F8DA;
+ background-size: cover;
+ z-index: 10;
+ overflow: hidden;
+}
+
+.sec07titleh2{
+ font-family: 'Poppins-Bold';
+ font-size: 27px;
+ color: #038654;
+ margin: 0px 0 20px 0;
+ padding: 0 0 0 0;
+}
+
+.sec07img1{
+ width: 88%;
+}
+
+.sec07ph1{
+ font-family: 'poppins-Regular';
+ font-size: 17px;
+ line-height: 26px;
+ text-align: left;
+ padding: 103px 0 95px 0;
+ margin: 0;
+}
+
+.btnsec07, .btnsec07:hover {
+ font-family: 'Poppins-Regular';
+ font-size: 15px;
+ color: #fff;
+ background-color: #006941;
+ border-color: #006941;
+ padding: 10px 20px;
+}
+
+.sec07btn{
+ margin: 24px 0 0 1056px;
+
+}
+/*End Section 07*/
+
+/* ========================================================== */
+/* 		               05. END PAGE SOBRE                       */
+/* ========================================================== */
+/* ========================================================== */
+/* 		                06. BEGIN PAGE COMO                     */
+/* ========================================================== */
+/*Begin Section 08*/
+.section08 {
+ position: relative;
+ padding-top: 108px;
+ padding-bottom: 65px;
+ background: #E9F8DA;
+ background-size: cover;
+ z-index: 10;
+ overflow: hidden;
+}
+
+.sec08titleh2{
+ font-family: 'Poppins-Bold';
+ font-size: 35px;
+ color: #038654;
+ margin: 37px 0 20px 0;
+ padding: 0 0 0 0;
+}
+
+.sec08ph1{
+ font-family: 'poppins-Regular';
+ font-size: 17px;
+ line-height: 26px;
+ text-align: left;
+ padding: 95px 0 130px 0;
+ margin: 0;
+}
+
+.btnsec08, .btnsec08:hover {
+ font-family: 'Poppins-Regular';
+ font-size: 15px;
+ color: #fff;
+ background-color: #006941;
+ border-color: #006941;
+ padding: 10px 20px;
+}
+
+.sec08img1{
+ width: 100%;
+}
+/*End Section 08*/
+
+/*Begin Section 09*/
+.section09 {
+ position: relative;
+ padding-top: 55px;
+ padding-bottom: 26px;
+ background: #ffffff;
+ background-size: cover;
+ z-index: 10;
+ overflow: hidden;
+}
+
+.sec09titleh2{
+ font-family: 'Poppins-Bold';
+ font-size: 35px;
+ color: #038654;
+ margin: 0px 0 30px 0;
+ padding: 0 0 0 0;
+ text-align: center;
+}
+
+.sec09title1{
+ font-family: 'Poppins-Bold';
+ font-size: 17px;
+ margin: 0;
+ padding: 15px 0 0 0; ;
+ color: #425FA1;
+}
+
+.sec09title2{ 
+ font-family: 'Poppins-Bold';
+ font-size: 17px;
+ margin: 0;
+ padding: 15px 0 0 0; ;
+ color: #038654;
+}
+
+.sec09title3{ 
+ font-family: 'Poppins-Bold';
+ font-size: 17px;
+ margin: 0;
+ padding: 15px 0 0 0; ;
+ color: #7B4538;
+}
+
+.sec09title4{ 
+ font-family: 'Poppins-Bold';
+ font-size: 17px;
+ margin: 0;
+ padding: 15px 0 0 0; ;
+ color: #868686;
+}
+
+.sec09ph{
+ font-family: 'Poppins-Regular';
+ font-size: 16px;
+ text-align: left;
+ padding: 51px 0 0 0;
+ margin: 0 0 0 0;
+}
+
+.sec09card, .sec09card2 {
+ width: 30rem;
+}
+
+.imgsec09{
+ width: 45%;
+}
+
+.sec09card {
+ position: relative;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-direction: column;
+ flex-direction: row;
+ min-width: 0;
+ word-wrap: break-word;
+ background-color: #fff;
+ background-clip: border-box;
+ border: none;
+ border-radius: .25rem;
+ align-content: flex-end;
+}
+
+.sec09card2 {
+ position: relative;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-direction: column;
+ flex-direction: row;
+ min-width: 0;
+ word-wrap: break-word;
+ background-color: #fff;
+ background-clip: border-box;
+ border: none;
+ border-radius: .25rem;
+ align-content: flex-end;
+}
+
+.sec09card3 {
+ position: relative;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-direction: column;
+ flex-direction: row;
+ min-width: 0;
+ word-wrap: break-word;
+ background-color: #fff;
+ background-clip: border-box;
+ border: none;
+ border-radius: .25rem;
+ align-content: flex-end;
+ right: -630px;
+ margin-top: -327px;
+ margin-bottom: 23px;
+}
+
+.sec09card4 {
+ position: relative;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-direction: column;
+ flex-direction: row;
+ min-width: 0;
+ word-wrap: break-word;
+ background-color: #fff;
+ background-clip: border-box;
+ border: none;
+ border-radius: .25rem;
+ align-content: flex-end;
+ right: -625px;
+}
+/*End Section 09*/
+
+/* ========================================================== */
+/* 		          07. BEGIN PAGE ATENDIMENTO                    */
+/* ========================================================== */
+/*Begin Section 10*/
+.section10 {
+ position: relative;
+ padding-top: 35px;
+ padding-bottom: 38px;
+ background: #fff;
+ /*background: url(../images/backsec02.jpg) top center no-repeat;*/
+ background-size: cover;
+ z-index: 10;
+ overflow: hidden;
+}
+
+.sec10imgmob{
+ width: 138%;
+ padding: 0 0 50px 0;
+ margin: 0 0 0 -211px;
+}
+
+.sec10card01 {
+ background: #038654;
+ margin: 20px 20px;
+ padding: 32px;
+ border-radius: 13px;
+ text-align:center;
+}
+
+.sec10card02 {
+  background: #038654;
+  margin: 20px 20px;
+  padding: 20px;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.sec10card03 {
+ background: #038654;
+ margin: 20px 20px;
+ padding: 27px;
+ border-radius: 13px;
+ text-align:center;
+}
+
+.sec10ph{
+ font-family: 'Poppins-Regular';
+ font-size: 16px;
+ color: #fff;
+ padding: 18px 0 0 0;
+}
+/*End Section 10*/
+
+/* ========================================================== */
+/* 		            07. END PAGE ATENDIMENTO                    */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 		              08. BEGIN PAGE LOGIN                      */
+/* ========================================================== */
+
+/*Begin Section 11*/
+.sectionlogin{
+ position: relative;
+ padding-top: 121px;
+ padding-bottom: 30px;
+ background: #E9F8DA;
+ background-size: cover;
+ z-index: 10;
+ overflow: hidden;
+}
+.blocklogin{
+ background: #8EB589;
+ padding: 28px;
+ margin: 0;
+ border-radius: 18px;
+}
+.form-group {
+   margin-bottom: 16px;
+}
+label {
+ display: inline-block;
+ font-family: 'Poppins-Regular';
+ font-size: 14px;
+ line-height: 21px;
+ padding: 0 0 3px 0;
+ margin: 0;
+ text-align: left;
+ color: #000;
+}
+.form-control {
+   display: block;
+   width: 100%;
+   height: calc(2.25rem + 2px);
+   padding: .375rem .75rem;
+   font-size: 14px;
+   line-height: 1.5;
+   font-family: 'Poppins-Regular';
+   color: #495057;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #ced4da;
+   border-radius: .25rem;
+   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.blockesqueceusenha{
+ text-align: right;
+}
+.btnforms1, .btnforms1:hover{
+ color: #fff;
+ font-size: 14px;
+ line-height: 21px;
+ font-family: 'Poppins-Regular';
+ text-align: right;
+ margin: 0;
+ padding: 0 0 10px 0px;
+}
+
+.blockcadastrar{
+ margin: 30px 0 0 0;
+ text-align: center;
+}
+.secloginphform{
+ font-family: 'Poppins-Regular';
+ font-size: 14px;
+ line-height: 21px;
+ color: #000;
+ padding: 0;
+ margin: 0;
+
+}
+.btnforms2, .btnforms2:hover{
+ color: #fff;
+ font-size: 14px;
+ line-height: 21px;
+ font-family: 'Poppins-Regular';
+ text-align: right;
+ margin: 0;
+ padding: 0 0 10px 0px;
+}
+
+.secloginmgmob{
+ padding: 0 0 0 178px;
+}
+
+.seclogintitle{
+ font-family: 'Poppins-Bold';
+ font-size: 24px;
+ color: #006941;
+ text-align: center;
+}
+/*End Section 11*/
+
+/* ========================================================== */
+/* 		              08. END PAGE LOGIN                        */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 		             09. BEGIN PAGE CADASTRAR                   */
+/* ========================================================== */
+
+/*Begin Section 12*/
+.section12{
+ position: relative;
+ padding-top: 121px;
+ padding-bottom: 30px;
+ background: #E9F8DA;
+ background-size: cover;
+ z-index: 10;
+ overflow: hidden;
+}
+
+.blocklogin{
+ background: #8EB589;
+ padding: 28px;
+ margin: 0;
+ border-radius: 18px;
+}
+
+.form-group {
+   margin-bottom: 16px;
+}
+
+label {
+ display: inline-block;
+ font-family: 'Poppins-Regular';
+ font-size: 14px;
+ line-height: 21px;
+ padding: 0 0 6px 0;
+ margin: 0;
+ text-align: left;
+ color: #000;
+}
+
+.form-control {
+   display: block;
+   width: 100%;
+   height: calc(2.25rem + 2px);
+   padding: .375rem .75rem;
+   font-size: 14px;
+   line-height: 1.5;
+   font-family: 'Poppins-Regular';
+   color: #495057;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #ced4da;
+   border-radius: .25rem;
+   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.blockesqueceusenha{
+ text-align: right;
+}
+
+.btnforms1, .btnforms1:hover{
+ color: #fff;
+ font-size: 14px;
+ line-height: 21px;
+ font-family: 'Poppins-Regular';
+ text-align: right;
+ margin: 0;
+ padding: 0 0 10px 0px;
+}
+
+.blockcadastrar{
+ margin: 30px 0 0 0;
+ text-align: center;
+}
+
+.secloginphform{
+ font-family: 'Poppins-Regular';
+ font-size: 14px;
+ line-height: 21px;
+ color: #000;
+ padding: 0;
+ margin: 0;
+}
+
+.btnforms2, .btnforms2:hover{
+ color: #fff;
+ font-size: 14px;
+ line-height: 21px;
+ font-family: 'Poppins-Regular';
+ text-align: right;
+ margin: 0;
+ padding: 0 0 10px 0px;
+}
+
+.sec12imgmob{
+ padding: 0 0 0 178px;
+}
+
+.sec12title{
+ font-family: 'Poppins-Bold';
+ font-size: 24px;
+ color: #006941;
+ text-align: center;
+}
+
+.sec12ph1{
+ font-family: 'Poppins-Regular';
+ font-size: 12px;
+ color: #E4F3D5;
+}
+/*End Section 12*/
+
+/* ========================================================== */
+/* 		              09. END PAGE CADASTRAR                    */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 		              10. BEGIN PAGE SENHA                      */
+/* ========================================================== */
+
+/*Begin Section 13*/
+.section13{
+ position: relative;
+ padding-top: 121px;
+ padding-bottom: 69px;
+ background: #E9F8DA;
+ background-size: cover;
+ z-index: 10;
+ overflow: hidden;
+}
+
+.sec13imgmob{
+  padding: 0 0 0 178px;
+ }
+
+.sec13title{
+  font-family: 'Poppins-Bold';
+  font-size: 24px;
+  color: #006941;
+  text-align: center;
+  padding: 4px 0 0 0;
+}
+
+.blocsec13{
+ background: #8EB589;
+ padding: 28px;
+ margin: 0;
+ border-radius: 18px;
+}
+
+/*End Section 13*/
+
+/* ========================================================== */
+/* 		               10. END PAGE SENHA                       */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 			            10. BEGIN PAGE LOCAL                      */
+/* ========================================================== */
+
+/*Begin Section 14*/
+.section14{
+  position: relative;
+  padding-top: 121px;
+  padding-bottom: 30px;
+  background: #E9F8DA;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+ }
+ 
+ .sec14title{
+   font-family: 'Poppins-Bold';
+   font-size: 24px;
+   color: #006941;
+   text-align: center;
+ }
+
+ .sec14titleh2{
+ font-family: 'Poppins-Bold';
+ font-size: 24px;
+ color: #006941;
+ text-align: center;
+ padding: 200px 0 0 0;
+ margin: 0 0 0 0;
+}
+
+.sec14ph1{
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
+  text-align: center;
+  margin: 13px 30px 0 30px;
+  padding: 0 0 0 0;
+}
+ 
+ .sec14imgmob{
+  padding: 0 0 0 178px;
+ }
+
+ .blocksec14{
+  background: #8EB589;
+  padding: 28px;
+  margin: 0;
+  border-radius: 18px;
+ } 
+
+
+/*End Section 14*/
+
+/* ========================================================== */
+/* 			             06. BEGIN FOOTER                         */
+/* ========================================================== */
+.footer{
+ padding: 12px 0 10px 0;
+ background-color: #038654;
+ border-top: 1px solid #038654;
+}
+
+.footerp1 {
+ color: #fff;
+ font-size: 12px;
+ line-height: 0px;
+ letter-spacing: 1px;
+ text-align: center;
+ margin-top: 13px;
+ font-family: 'Poppins-Regular';
+}
+/* ========================================================== */
+/*                     06. END FOOTER                         */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 			         07. BEGIN MEDIA QUERIES                      */
+/* ========================================================== */
+
+/*Dispositivos small*/
+@media screen and (max-width: 600px) {
+ /*Begin Nav-Bar*/
+ .navbar-fixed-top {
+   background-color: #038654!important;
+   border-bottom: 0px solid #038654;
+   display: none;
+ }
+
+ .left-menu{
+   margin-left: 0px !important;
+   margin-top: 32px;
+ }
+ /*End Nav-Bar*/
+
+ /* ========================================================== */
+ /*                 03. BEGIN PAGE HOME                        */
+ /* ========================================================== */
+
+ /*Begin Section 01*/
+ .section01 {
+   position: relative;
+   padding-top: 50px;
+   padding-bottom: 26px;
+   background: #E9F8DA;
+   background-size: cover;
+   z-index: 10;
+   overflow: hidden;
+ }
+ .sec01titleh1{
+   font-family: 'Poppins-Bold';
+   font-size: 34px;
+   line-height: 48px;
+   margin: 0;
+   padding: 10px 0 10px 0;
+   text-align: center;
+   color: #038654;
+ }
+ .sec01ph1{
+   font-family: 'poppins-Regular';
+   font-size: 16px;
+   line-height: 26px;
+   text-align: left;
+   padding: 0;
+   margin: 0 0 8px 0;
+ }
+
+ .sec01ph2{
+   font-family: 'poppins-Regular';
+   font-size: 16px;
+   line-height: 26px;
+   text-align: left;
+   padding: 0 0 8px 0;
+   margin: 0;
+ }
+ .sec01titleh2{
+   font-family: 'Poppins-Bold';
+   font-size: 22px;
+   line-height: 52px;
+   padding: 14px 0 12px 0;
+   text-align: center;
+   color: #038654;
+   margin: 0;
+ }
+ .sec01phinte{
+   font-family: 'Poppins-Bold';
+   font-size: 17px;
+   line-height: 26px;
+   margin: 0;
+   padding: 0px 0 20px 0;
+   text-align: center;
+ }
+
+ .bloco1, .bloco3{
+   text-align: left;
+   
+ }
+ .bloco2, .bloco4{
+   text-align: right;
+   margin-top: -196px;
+   margin-bottom: 23px;
+ }
+
+ .card, .card2, .card3, .card4 {
+   width: 23rem;
+ }
+
+ .card {
+   position: relative;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word;
+   background-color: #e9f8da;
+   background-clip: border-box;
+   border: none;
+   border-radius: .25rem;
+ }
+
+ .card2 {
+   position: relative;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word;
+   background-color: #e9f8da;
+   background-clip: border-box;
+   border: none;
+   border-radius: .25rem;
+   align-content: flex-end;
+   right: 0;
+ }
+
+ .card3 {
+   position: relative;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word;
+   background-color: #e9f8da;
+   background-clip: border-box;
+   border: none;
+   border-radius: .25rem;
+ }
+
+ .card4 {
+   position: relative;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   min-width: 0;
+   word-wrap: break-word;
+   background-color: #e9f8da;
+   background-clip: border-box;
+   border: none;
+   border-radius: .25rem;
+   align-content: flex-end;
+   right: 0;
+ }
+ /*End Section 01*/
+
+ /*Begin Section 02*/
+ .section02 {
+   position: relative;
+   padding-top: 65px;
+   padding-bottom: 0px;
+   background: #fff;
+   /*background: url(../images/backsec02.jpg) top center no-repeat;*/
+   background-size: cover;
+   z-index: 10;
+   overflow: hidden;
+ }
+
+ .sec02title1{
+   font-family: 'Poppins-Bold';
+   font-size: 34px;
+   line-height: 52px;
+   margin: 0;
+   text-align: center;
+   padding: 0 0 10px 0;
+   color: #038654;
+ }
+ .sec02ph1{
+   font-family: 'poppins-Regular';
+   font-size: 16px;
+   line-height: 26px;
+   text-align: center;
+   padding: 0;
+   margin: 0;
+   position: relative;
+ }
+ .sec02imgmob{
+   width: 100%;
+ }
+ /*End Section 02*/
+
+ /*Begin Section 03*/
+ .section03 {
+   position: relative;
+   padding-top: 40px;
+   padding-bottom: 0px;
+   background: #E9F8DA;
+   background-size: cover;
+   z-index: 10;
+   overflow: hidden;
+ }
+
+ .sec03titleh2{
+   font-family: 'Poppins-Bold';
+   font-size: 30px;
+   line-height: 50px;
+   padding: 0px 0 26px 0;
+   text-align: center;
+   color: #038654;
+   margin: 0;
+ }
+
+ .sec03title{
+   font-family: 'Poppins-Bold';
+   font-size: 20px;
+   line-height: 30px;
+   margin: 0;
+   padding: 14px 0 5px 0;
+   text-align: center;
+   color: #038654;
+   }
+
+ .sec03ph{
+   font-size: 16px;
+   line-height: 20px;
+   text-align: center;
+   padding: 0px 0px 48px;
+   margin: 0;
+   color: #000;
+   font-family: 'Poppins-Regular';
+ }
+ .sec03bloco1{
+   text-align: center;
+ }
+ .imgtm{
+   width: 90%;
+ }
+ /*End Section 03*/
+
+ /*Begin Section 04*/
+ .section04 {
+   position: relative;
+   padding-top: 60px;
+   padding-bottom: 0tpx;
+   background: #E9F8DA;
+   background-size: cover;
+   z-index: 10;
+   overflow: hidden;
+ }
+ .sec04titleh2{
+   font-family: 'Poppins-Bold';
+   font-size: 27px;
+   line-height: 39px;
+   margin: 0;
+   padding: 0 0 10px 0;
+   text-align: left;
+   color: #038654;
+ }
+ .sec04ph1{
+   font-family: 'poppins-Regular';
+   font-size: 16px;
+   line-height: 20px;
+   text-align: left;
+   padding: 0 0px 46px 0;
+   margin: 0;
+ }
+ .btn-primary, .btn-primary:hover {
+   color: #fff;
+   background-color: #006941;
+   border-color: #006941;
+   font-family: 'Poppins-Regular';
+   font-size: 16px;
+   padding: 10px 20px;
+   border-radius: 35px;
+ }
+
+ .btn-second, .btn-second:hover {
+   color: #006941;
+   background-color: #00694100;
+   border-color: #00694100;
+   font-family: 'Poppins-Bold';
+   font-size: 16px;
+   padding: 10px 20px;
+   border-radius: 35px;
+   font-style: normal;
+   text-decoration: underline;
+ }
+ .sec04cadast{
+   margin: 12px 0 0 0;
+ }
+ .sec04imgecolog{
+   width: 100%;
+ }
+
+
+ /*Begin footer*/
+ .footerp1 {
+   margin-bottom: 5px;
+   line-height: 20px;
+   color: #fff;
+   font-size: 12px;
+   letter-spacing: 1px;
+   text-align: center;
+ }
+ /*End footer*/
+}
+/* ========================================================== */
+/*                 05. END MEDIA QUERIES                      */
+/* ========================================================== */
