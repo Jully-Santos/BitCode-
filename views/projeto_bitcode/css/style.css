@@ -1724,6 +1724,47 @@ input#textfeedback.seufeedback{
   overflow: hidden;
  }
 
+.btnsec20, .btnsec20:hover {
+  font-family: 'Poppins-Regular';
+  font-size: 15px;
+  color: #038654;
+  padding: 10px 20px;
+}
+
+.sec20btn{
+  color: #000;
+  margin: 0 0 -20px 0;
+  text-align: center;
+}
+
+.sec20botoes{
+  color: #000;
+  margin: 0 0 15px 0;
+}
+
+.sec20end{
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
+  color: #000;
+}
+
+.sec20end1{
+  font-family: 'Poppins-Bold';
+  font-size: 16px;
+  color: #000;
+}
+
+.btnsec22desc, .btnsec22desc:hover {
+  font-family: 'Poppins-Regular';
+  font-size: 15px;
+  color: #fff;
+  background-color: #006941;
+  border-color: #006941;
+  padding: 10px 20px;
+  margin: 10px 0 0 50px;
+  align-items: center;
+}
+
 /*End Section 20*/
 
 /* ========================================================== */
@@ -1737,8 +1778,8 @@ input#textfeedback.seufeedback{
 /*Begin Section 21*/
 .section21{
   position: relative;
-  padding-top: 145px;
-  padding-bottom: 109px;
+  padding-top: 165px;
+  padding-bottom: 64px;
   background: #E9F8DA;
   background-size: cover;
   z-index: 10;
@@ -1787,21 +1828,29 @@ input#textfeedback.seufeedback{
   text-align:center;
 }
 
-.form-controlsec21{
-  display: block;
-  width: 100%;
-  height: calc(2.25rem + 2px);
-  padding: .375rem 4.76rem;
-  font-size: 14px;
-  line-height: 1.5;
-  font-family: 'Poppins-Regular';
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+.sec21-container {
+  /* width: 100%;*/
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
 }
+
+.form-controlsec21{
+  /* display: block;*/
+  /* width: 100%;*/
+   height: calc(2.25rem + 2px);
+   padding: .375rem 4.76rem;
+   font-size: 14px;
+   line-height: 1.5;
+   font-family: 'Poppins-Regular';
+   color: #495057;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #ced4da;
+   border-radius: .25rem;
+   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+ }
 
 .sec21card1{
   color: #fff;
@@ -1829,13 +1878,15 @@ input#textfeedback.seufeedback{
   color: #038654;
 }
 
-.btnsec21, .btnsec21:hover {
-  color: #000;
+.btn-sec21, .btn-sec21:hover{
+  color: #fff;
+  background-color: #006941;
+  border-color: #006941;
   font-family: 'Poppins-Regular';
   font-size: 16px;
-  padding: 5px 0 0 0;
-  border-radius: 0;
-  text-align: center;
+  padding: 10px 20px;
+  margin: 0 0 0 0px;
+  border-radius: 35px;
 }
 
 .sec21ph{
@@ -1843,6 +1894,7 @@ input#textfeedback.seufeedback{
   font-size: 16px;
   text-align: left;
   color: #000;
+  margin: 0 0 11px 0;
 }
 
 /*End Section 21*/
@@ -1858,8 +1910,8 @@ input#textfeedback.seufeedback{
 /*Begin Section 22*/
 .section22{
   position: relative;
-  padding-top: 145px;
-  padding-bottom: 109px;
+  padding-top: 141px;
+  padding-bottom: 85px;
   background: #E9F8DA;
   background-size: cover;
   z-index: 10;
@@ -1900,6 +1952,87 @@ input#textfeedback.seufeedback{
   border-color: #B5E8A1;
   padding: 10px 20px;
  }
+
+ .sec22opcoes {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.sec22-button1, .sec22-button1:hover {
+  background-color: #d0edc4;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sec22-button2, .sec22-button2:hover {
+  background-color: #d0edc4;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sec22-container {
+  /* width: 100%;*/
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.caixinha{
+  width: 50px;
+  height: auto;
+}
+
+input[type="text"] {
+ /* width: 100%;*/
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-sec22, .btn-sec22:hover{
+  color: #fff;
+  background-color: #006941;
+  border-color: #006941;
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 0 0 0px;
+  border-radius: 35px;
+}
+
+.row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin: 0 0 0 2px;
+}
+
+.form-controlsec22{
+ /* display: block;*/
+  width: 86%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem 4.76rem;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: 'Poppins-Regular';
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
 
 /* ========================================================== */
 /* 		               18. END PAGE AJUDA                       */
