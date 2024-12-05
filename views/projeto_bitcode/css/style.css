@@ -30,6 +30,8 @@ Sequência do CSS Da Página: (use esses nomes a pesquisa rápida no código.)
     01. Section 13
 11. BEGIN PAGE LOCAL
     01. Section 14
+12. BEGIN PAGE FEEDBACK 
+    01. Section 15
 
 
 
@@ -141,7 +143,7 @@ a:hover{
  transition: all 0.5s ease;
 }
 
-.navbar-fixed-top .navbar-nav > li > a{
+/*.navbar-fixed-top .navbar-nav > li > a{
  color: #fff !important;
  font-size: 16px !important;
  line-height: 10px !important;
@@ -150,8 +152,28 @@ a:hover{
  font-weight: 100;
  letter-spacing: 1px;
  text-transform: uppercase;
+}*/
+.navbar-nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
 }
-
+a{
+  color: #fff !important;
+  font-size: 16px !important;
+  line-height: 10px !important;
+  padding: 10px 15px;
+  font-family: 'Poppins-Regular';
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 .navbar-fixed-top .navbar-nav .current a {
  color:#E9F8DA!important;
  -webkit-transition: all 0.5s ease;
@@ -228,6 +250,7 @@ a:hover{
  z-index: 10;
  overflow: hidden;
 }
+
 .sec01titleh1{
  font-family: 'Poppins-Bold';
  font-size: 40px;
@@ -237,6 +260,7 @@ a:hover{
  text-align: left;
  color: #038654;
 }
+
 .sec01ph1{
  font-family: 'poppins-Regular';
  font-size: 17px;
@@ -254,6 +278,7 @@ a:hover{
  padding: 0 52px 20px 0;
  margin: 0;
 }
+
 .sec01titleh2{
  font-family: 'Poppins-Bold';
  font-size: 26px;
@@ -263,6 +288,7 @@ a:hover{
  color: #038654;
  margin: 0 0 0 63px;
 }
+
 .sec01phinte{
  font-family: 'Poppins-Bold';
  font-size: 17px;
@@ -513,13 +539,13 @@ a:hover{
 }
 
 .sec05titleh2 {
- font-family: 'Poppins-Bold';
- font-size: 40px;
- line-height: 16px;
- margin: 0;
- padding: 38px 0 45px 0;
- text-align: left;
- color: #038654;
+  font-family: 'Poppins-Bold';
+  font-size: 40px;
+  line-height: 16px;
+  margin: 0;
+  text-align: center;
+  padding: 38px 0 45px 0;
+  color: #038654;
 }
 
 .sec05ph1 {
@@ -532,12 +558,13 @@ a:hover{
 }
 
 .sec05ph2{
- font-family: 'poppins-Regular';
- font-size: 17px;
- line-height: 26px;
- text-align: center;
- padding: 35px 0px 15px 0;
- margin: 0;
+  font-family: 'poppins-Regular';
+  font-size: 17px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 600;
+  padding: 1px 0px 38px 0;
+  margin: 0;
 }
 
 .sec05img1{
@@ -555,78 +582,41 @@ a:hover{
  z-index: 10;
  overflow: hidden;
 }
-
+.imgsec06{
+  width: 92%;
+}
 .sec06titleh2{
- font-family: 'Poppins-Bold';
- font-size: 30px;
- color: #038654;
- margin: 0 0 20px 0;
- padding: 0 0 0 0;
+  font-family: 'Poppins-Bold';
+  font-size: 30px;
+  color: #038654;
+  margin: 0 0 38px 0;
+  padding: 0 0 0 0;
+  text-align: center;
 }
 
 .sec06title{
- font-family: 'Poppins-Bold';
- font-size: 17px;
- margin: 0;
- padding: 15px 0 0 0; ;
- color: #038654;
+  font-family: 'Poppins-Bold';
+  font-size: 17px;
+  margin: 0;
+  padding: 15px 0 6px 0;
+  color: #038654;
+  text-align: left;
 }
 
 .sec06ph{
- font-family: 'Poppins-Regular';
- font-size: 15px;
- margin: 0;
- padding: 0 0 0 16px;
+  font-family: 'Poppins-Regular';
+  font-size: 15px;
+  margin: 0;
+  padding: 3px 0 44px 16px;
 }
 
-.sec06card, .sec06card2 {
- width: 30rem;
-}
-
-.imgsec06{
- width: 88%;
-}
-
-.sec06card3 {
- position: relative;
- display: -ms-flexbox;
- display: flex;
- -ms-flex-direction: column;
- flex-direction: column;
- min-width: 0;
- word-wrap: break-word;
- background-color: #fff;
- background-clip: border-box;
- border: none;
- border-radius: .25rem;
- align-content: flex-end;
- right: -630px;
- margin-top: -652px;
- margin-bottom: 23px;
-}
-
-.sec06card4 {
- position: relative;
- display: -ms-flexbox;
- display: flex;
- -ms-flex-direction: column;
- flex-direction: column;
- min-width: 0;
- word-wrap: break-word;
- background-color: #fff;
- background-clip: border-box;
- border: none;
- border-radius: .25rem;
- align-content: flex-end;
- right: -625px;
-}
 /*End Section 06*/
 
 /*Begin Section 07*/
 .section07{  
  position: relative;
- padding-top: 49px;
- padding-bottom: 26px;
+ padding-top: 55px;
+ padding-bottom: 30px;
  background: #E9F8DA;
  background-size: cover;
  z-index: 10;
@@ -637,21 +627,21 @@ a:hover{
  font-family: 'Poppins-Bold';
  font-size: 27px;
  color: #038654;
- margin: 0px 0 20px 0;
+ margin: 50px 0 20px 0;
  padding: 0 0 0 0;
 }
 
 .sec07img1{
- width: 88%;
+ width: 100%;
 }
 
 .sec07ph1{
- font-family: 'poppins-Regular';
- font-size: 17px;
- line-height: 26px;
- text-align: left;
- padding: 103px 0 95px 0;
- margin: 0;
+  font-family: 'poppins-Regular';
+  font-size: 17px;
+  line-height: 26px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 .btnsec07, .btnsec07:hover {
@@ -664,8 +654,8 @@ a:hover{
 }
 
 .sec07btn{
- margin: 24px 0 0 1056px;
-
+  margin: 0;
+  text-align: right;
 }
 /*End Section 07*/
 
@@ -690,17 +680,17 @@ a:hover{
  font-family: 'Poppins-Bold';
  font-size: 35px;
  color: #038654;
- margin: 37px 0 20px 0;
+ margin: 64px 0 20px 0;
  padding: 0 0 0 0;
 }
 
 .sec08ph1{
- font-family: 'poppins-Regular';
- font-size: 17px;
- line-height: 26px;
- text-align: left;
- padding: 95px 0 130px 0;
- margin: 0;
+  font-family: 'poppins-Regular';
+  font-size: 17px;
+  line-height: 26px;
+  text-align: left;
+  padding: 0px 30px 18px 0;
+  margin: 0;
 }
 
 .btnsec08, .btnsec08:hover {
@@ -729,124 +719,124 @@ a:hover{
 }
 
 .sec09titleh2{
- font-family: 'Poppins-Bold';
- font-size: 35px;
- color: #038654;
- margin: 0px 0 30px 0;
- padding: 0 0 0 0;
- text-align: center;
+text-align: center;
+color: #038654;
+font-size: 34px;
+line-height: 58px;
+font-family: 'Poppins-Bold';
+padding: 0;
+margin: 0;
+}
+
+.categoriasimgsblock{
+width: 33%;
+  position: absolute;
+}
+
+.categoriasimgs3block{
+width: 29%;
+  position: absolute;
+}
+
+.categoriasimgs4block{
+width: 33%;
+  position: absolute;
+}
+
+.sec09ph1{
+font-family: 'poppins-Regular';
+font-size: 17px;
+line-height: 26px;
+text-align: left;
+padding: 0 72px 20px 0;
+margin: 0;
+}
+
+.sec09ph2{
+font-family: 'poppins-Regular';
+font-size: 17px;
+line-height: 26px;
+text-align: left;
+padding: 0 72px 20px 0;
+margin: 0;
+}
+
+.sec09ph3{
+font-family: 'poppins-Regular';
+font-size: 17px;
+line-height: 26px;
+text-align: left;
+padding: 0 72px 20px 0;
+margin: 0;
+}
+
+.sec09ph4{
+font-family: 'poppins-Regular';
+font-size: 17px;
+line-height: 26px;
+text-align: left;
+padding: 0 72px 20px 0;
+margin: 0;
+}
+
+.blocotext1{
+position: relative;
+margin: 48px 0 64px 165px 
+}
+
+.blocotext2{
+position: relative;
+margin: 48px 0 64px 165px 
+}
+
+.blocotext3{
+position: relative;
+margin: 48px 0 64px 165px 
+}
+
+.blocotext4{
+position: relative;
+margin: 48px 0 64px 165px 
 }
 
 .sec09title1{
- font-family: 'Poppins-Bold';
- font-size: 17px;
- margin: 0;
- padding: 15px 0 0 0; ;
- color: #425FA1;
+font-family: 'Poppins-Bold';
+font-size: 24px;
+line-height: 28px;
+color: #00339b;
+padding: 26px 0 0 0;
+margin: 0;
+text-align: left;
 }
 
-.sec09title2{ 
- font-family: 'Poppins-Bold';
- font-size: 17px;
- margin: 0;
- padding: 15px 0 0 0; ;
- color: #038654;
+.sec09title2{
+font-family: 'Poppins-Bold';
+font-size: 24px;
+line-height: 28px;
+color: #0b5531;
+padding: 26px 0 0 0;
+margin: 0;
+text-align: left;
 }
 
-.sec09title3{ 
- font-family: 'Poppins-Bold';
- font-size: 17px;
- margin: 0;
- padding: 15px 0 0 0; ;
- color: #7B4538;
+.sec09title3{
+font-family: 'Poppins-Bold';
+font-size: 24px;
+line-height: 28px;
+color: #a9522b;
+padding: 26px 0 0 0;
+margin: 0;
+text-align: left;
 }
 
-.sec09title4{ 
- font-family: 'Poppins-Bold';
- font-size: 17px;
- margin: 0;
- padding: 15px 0 0 0; ;
- color: #868686;
-}
-
-.sec09ph{
- font-family: 'Poppins-Regular';
- font-size: 16px;
- text-align: left;
- padding: 51px 0 0 0;
- margin: 0 0 0 0;
-}
-
-.sec09card, .sec09card2 {
- width: 30rem;
-}
-
-.imgsec09{
- width: 45%;
-}
-
-.sec09card {
- position: relative;
- display: -ms-flexbox;
- display: flex;
- -ms-flex-direction: column;
- flex-direction: row;
- min-width: 0;
- word-wrap: break-word;
- background-color: #fff;
- background-clip: border-box;
- border: none;
- border-radius: .25rem;
- align-content: flex-end;
-}
-
-.sec09card2 {
- position: relative;
- display: -ms-flexbox;
- display: flex;
- -ms-flex-direction: column;
- flex-direction: row;
- min-width: 0;
- word-wrap: break-word;
- background-color: #fff;
- background-clip: border-box;
- border: none;
- border-radius: .25rem;
- align-content: flex-end;
-}
-
-.sec09card3 {
- position: relative;
- display: -ms-flexbox;
- display: flex;
- -ms-flex-direction: column;
- flex-direction: row;
- min-width: 0;
- word-wrap: break-word;
- background-color: #fff;
- background-clip: border-box;
- border: none;
- border-radius: .25rem;
- align-content: flex-end;
- right: -630px;
- margin-top: -327px;
- margin-bottom: 23px;
-}
-
-.sec09card4 {
- position: relative;
- display: -ms-flexbox;
- display: flex;
- -ms-flex-direction: column;
- flex-direction: row;
- min-width: 0;
- word-wrap: break-word;
- background-color: #fff;
- background-clip: border-box;
- border: none;
- border-radius: .25rem;
- align-content: flex-end;
- right: -625px;
+.sec09title4{
+font-family: 'Poppins-Bold';
+font-size: 24px;
+line-height: 28px;
+color: #000;
+padding: 26px 0 0 0;
+margin: 0;
+text-align: left;
 }
 /*End Section 09*/
 
@@ -1161,7 +1151,7 @@ label {
 /* ========================================================== */
 
 /* ========================================================== */
-/* 			            10. BEGIN PAGE LOCAL                      */
+/* 			            11. BEGIN PAGE LOCAL                      */
 /* ========================================================== */
 
 /*Begin Section 14*/
@@ -1209,9 +1199,711 @@ label {
   margin: 0;
   border-radius: 18px;
  } 
-
-
 /*End Section 14*/
+
+/* ========================================================== */
+/* 			             11. END PAGE LOCAL                       */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 			            12. BEGIN PAGE FEEDBACK                   */
+/* ========================================================== */
+
+/*Begin Section 15*/
+.section15{
+  position: relative;
+  padding-top: 141px;
+  padding-bottom: 70px;
+  background: #E9F8DA;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+ }
+
+.sec15titleh2{
+  font-family: 'Poppins-Bold';
+  font-size: 26px;
+  color: #006941;
+  padding: 0 0 27px 0;
+  text-align: center;
+}
+
+.sec15card{
+  background-color: #03764a;
+  border-radius: 3px;
+  padding: 0 0 23px 0;
+  margin: 10px 110px 0 110px;
+}
+
+.sec15user{
+  width: 7%;
+  margin: 6px 0 0 6px;
+}
+
+.sec15user1{
+  width: 7%;
+  margin: 6px 0 0 176px;
+}
+
+.sec15seuh3{
+  font-family: 'Poppins-Bold';
+  font-size: 16px;
+  color: #ffff;
+  padding: 0 0 0 248px;
+  margin: -39px 0 0 0;
+}
+
+.sec15p1{
+  font-family: 'Poppins-Italic';
+  font-size: 16px;
+  color: #fff;
+  padding: 0 0 0 432px;
+  margin: -22px 0 0 0;
+}
+
+.sec15userh3{
+  font-family: 'Poppins-Bold';
+  font-size: 16px;
+  color: #ffff;
+  padding: 0 0 0 78px;
+  margin: -39px 0 0 0;
+}
+
+.sec15ph1{
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
+  color: #fff;
+  padding: 0 0 0 238px;
+  margin: -22px 0 0 0;
+}
+
+.sec15ph2{
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
+  color: #fff;
+  padding: 0 0 0 216px;
+  margin: -22px 0 0 0;
+}
+
+.sec15ph3{
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
+  color: #fff;
+  padding: 0 0 0 220px;
+  margin: -22px 0 0 0;
+}
+
+.sec15ph4{
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
+  color: #fff;
+  padding: 0 0 0 233px;
+  margin: -22px 0 0 0;
+}
+
+.seufeedback{
+  display: block;
+  width: 30%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  margin: -32px 0 0 374px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: 'Poppins-Italic';
+  color: #ffffff;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #fff;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+input#textfeedback.seufeedback{
+  color: #fff!important;
+}
+
+
+.sec15blockbut{
+  text-align: right;
+  margin: -41px 132px -19px 0;
+}
+/*End Section 15*/
+
+/* ========================================================== */
+/* 			             12. END PAGE FEEDBACK                    */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 			         12. BEGIN PAGE EDITAR PERFIL                 */
+/* ========================================================== */
+
+/*Begin Section 16*/
+.section16{
+  position: relative;
+  padding-top: 145px;
+  padding-bottom: 109px;
+  background: #E9F8DA;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+ }
+
+ .sec16title1{
+  font-family: 'Poppins-Bold';
+  font-size: 26px;
+  color: #006941;
+  padding: 0 0 35px 0;
+}
+
+.sec16title2{
+  font-family: 'Poppins-Regular';
+  font-size: 13px;
+  margin: -41px 0 70px 0;
+  padding: 0 0 0 0;
+}
+
+.sec16user1{
+  width: 20%;
+  margin: -35px 0 0 0;
+}
+
+.btnsec16, .btnsec16:hover {
+  font-family: 'Poppins-Regular';
+  font-size: 15px;
+  color: #fff;
+  background-color: #006941;
+  border-color: #006941;
+  padding: 10px 20px;
+ }
+
+.sec16btn{
+  margin: 0 0 50px -446px;
+}
+ 
+/*End Section 16*/
+
+/* ========================================================== */
+/* 			          12. END PAGE EDITAR PERFIL                  */
+/* ========================================================== */
+
+/* ========================================================== */
+/*                   13. BEGIN PAGE DESCARTES                 */
+/* ========================================================== */
+
+/*Begin Section 17*/
+.section17{
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background: #fff;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+ }
+.sec17block00{
+  margin: 0 0 0 10px;
+}
+ .sec17h1block0{
+  font-family: 'Poppins-Bold';
+  font-size: 40px;
+  line-height: 49px;
+  margin: 0;
+  padding: 43px 0 4px 0;
+  text-align: left;
+  color: #038654;
+ }
+ .sec17h3block0{
+  font-family: 'Poppins-Bold';
+  font-size: 16px;
+  line-height: 20px;
+  margin: 4px 0 11px 0;
+  padding: 0;
+  text-align: left;
+  color: #000;
+ }
+ .sec17th2{
+  font-family: 'Poppins-Bold';
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0;
+  padding: 34px 0 4px 0;
+  text-align: left;
+  color: #038654;
+ }
+.sec17ph1{
+  font-family: 'poppins-Regular';
+  font-size: 17px;
+  line-height: 26px;
+  text-align: left;
+  padding: 0 0px 20px 0;
+  margin: 0;
+  color: #000;
+ }
+ .sec17block2{
+  background: #CFE69E;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+ }
+ .imgsec17descarte{
+  width: 55%;
+ }
+ .sec17th4{
+  font-family: 'Poppins-Bold';
+  color: #038654;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  padding: 15px 0 0 0;
+  margin: 0;
+ }
+ .sec17ph2{
+  font-family: 'poppins-Regular';
+  color: #000;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+ }
+ .sec17block3{
+  margin: 20px 0 0 0;
+  background: #CFE69E;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+ }
+.btn-sec17, .btn-sec17:hover{
+  color: #006941;
+  background-color: #00694100;
+  border-color: #00694100;
+  font-family: 'Poppins-Bold';
+  font-size: 16px;
+  padding: 0px 0px;
+  border-radius: 35px;
+  font-style: normal;
+  text-decoration: underline;
+}
+.sec17h4butaadd{
+  font-family: 'Poppins-Bold';
+  color: #000000;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: right;
+  padding: 64px 0 13px 0;
+  margin: 0;
+}
+.sec17blocbutadd{
+  text-align: right;
+}
+.btn-sec17butadd,.btn-sec17butadd:hover {
+  color: #fff;
+  background-color: #006941;
+  border-color: #006941;
+  padding: 10px 32px !important;
+  border-radius: 25px;
+  font-family: 'Poppins-Regular';
+  font-size: 14px !important;
+}
+/*End Section 17*/
+/* ========================================================== */
+/*                   13. END PAGE DESCARTES                   */
+/* ========================================================== */
+
+/* ========================================================== */
+/*                   13. BEGIN PAGE QRCODE                    */
+/* ========================================================== */
+
+/*Begin Section 18*/
+.section18{
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background: #fff;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+ }
+
+.sec18block00{
+  margin: 0 0 0 10px;
+}
+ .sec18h1block0{
+  font-family: 'Poppins-Bold';
+  font-size: 40px;
+  line-height: 49px;
+  margin: 0;
+  padding: 43px 0 4px 0;
+  text-align: left;
+  color: #038654;
+ }
+ .sec18h3block0{
+  font-family: 'Poppins-Bold';
+  font-size: 16px;
+  line-height: 20px;
+  margin: 4px 0 11px 0;
+  padding: 0;
+  text-align: left;
+  color: #000;
+ }
+ .btn-sec18, .btn-sec18:hover{
+  color: #006941;
+  background-color: #00694100;
+  border-color: #00694100;
+  font-family: 'Poppins-Bold';
+  font-size: 16px;
+  padding: 0px 0px;
+  border-radius: 35px;
+  font-style: normal;
+  text-decoration: underline;
+}
+.sec18th2{
+  font-family: 'Poppins-Bold';
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0;
+  padding: 34px 0 4px 0;
+  text-align: left;
+  color: #038654;
+
+}
+.sec18arroba{
+  font-family: 'poppins-Regular';
+  font-size: 17px;
+  line-height: 26px;
+  text-align: center;
+  padding: 15px 0px 8px 0;
+  margin: 0;
+  color: #000;
+}
+.sec18ph{
+  font-family: 'poppins-Regular';
+  font-size: 17px;
+  line-height: 26px;
+  text-align: left;
+  padding: 0 0px 20px 0;
+  margin: 0;
+  color: #000;
+}
+
+/*End Section 18*/
+
+/* ========================================================== */
+/*                   14. END PAGE QRCODE                      */
+/* ========================================================== */
+
+/* ========================================================== */
+/*            15. BEGIN PAGE PERFIL USUARIO                    */
+/* ========================================================== */
+
+/*Begin Section 19*/
+.section19{
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background: #fff;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+ }
+.sec19th2 {
+  font-family: 'Poppins-Bold';
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0;
+  padding: 34px 0 4px 0;
+  text-align: left;
+  color: #038654;
+}
+.sec19ph1 {
+  font-family: 'poppins-Regular';
+  font-size: 17px;
+  line-height: 26px;
+  text-align: left;
+  padding: 0 0px 20px 0;
+  margin: 0;
+  color: #000;
+}
+.sec19block2 {
+  background: #CFE69E;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+.sec19th2 {
+  font-family: 'Poppins-Bold';
+  font-size: 22px;
+  line-height: 28px;
+  margin: 0;
+  padding: 34px 0 0px 0;
+  text-align: left;
+  color: #038654;
+}
+.sec19block2 {
+  background: #CFE69E;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+.sec19th4{
+  font-family: 'Poppins-Bold';
+  color: #038654;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  padding: 15px 0 0 0;
+  margin: 0;
+}
+.sec19ph2{
+  font-family: 'poppins-Regular';
+  color: #000;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.sec19block23{
+  background: #8EB589;
+  text-align: left;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 30px;
+  margin: 20px 0;
+}
+.sec19block24{
+  display: flex;
+  flex-direction: column;  
+}
+.sec19th4bl3{
+  font-family: 'Poppins-Bold';
+  color: #000;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+  padding: 15px 0 0 0;
+  margin: 0;
+}
+.addnovodescartform{
+  background: #d0d0d0;
+  padding: 20px;
+  margin: 34px 200px 0;
+  border-radius: 10px 
+}
+
+.btn-sec19butadd, .btn-sec19butadd:hover {
+  color: #fff;
+  background-color: #006941;
+  border-color: #006941;
+  padding: 10px 32px !important;
+  border-radius: 25px;
+  font-family: 'Poppins-Regular';
+  font-size: 14px !important;
+  width: 100%;
+}
+/*End Section 19*/
+
+/* ========================================================== */
+/*             15. BEGIN PAGE PERFIL USUARIO                  */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 		              16. BEGIN PAGE MAPA                       */
+/* ========================================================== */
+
+/*Begin Section 20*/
+.section20{
+  position: relative;
+  padding-top: 145px;
+  padding-bottom: 109px;
+  background: #E9F8DA;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+ }
+
+/*End Section 20*/
+
+/* ========================================================== */
+/* 		              16. END PAGE MAPA                         */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 		              17. BEGIN PAGE AJUDA                      */
+/* ========================================================== */
+
+/*Begin Section 21*/
+.section21{
+  position: relative;
+  padding-top: 145px;
+  padding-bottom: 109px;
+  background: #E9F8DA;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.form-inlinepesquisa{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-align: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.sec21titleh2{
+  font-family: 'Poppins-Bold';
+  font-size: 35px;
+  line-height: 52px;
+  margin: 0;
+  padding: 0 0 10px 0;
+  text-align: center;
+  color: #038654;
+}
+
+.btnpesquisa, .btnpesquisa:hover {
+  color: #fff;
+  background-color: #006941;
+  border-color: #006941;
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 35px;
+  text-align: center;
+}
+
+.sec21card{
+  color: #fff;
+  background: #B5E8A1;
+  border: 1px solid;
+  border-color: #000;
+  margin: 20px 20px;
+  padding: 32px;
+  border-radius: 13px;
+  text-align:center;
+}
+
+.form-controlsec21{
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem 4.76rem;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: 'Poppins-Regular';
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.sec21card1{
+  color: #fff;
+  background: #B5E8A1;
+  border: 1px solid;
+  border-color: #000;
+  margin: 20px 20px;
+  padding: 32px;
+  border-radius: 13px;
+  text-align:center;
+}
+
+.sec21pesquisa{
+  margin: 0 0 0 265px;
+  padding: 0 0 0 75px;
+}
+
+.sec21perguntas{
+  font-family: 'Poppins-Bold';
+  font-size: 25px;
+  line-height: 52px;
+  margin: 0;
+  padding: 0 0 0 0;
+  text-align: left;
+  color: #038654;
+}
+
+.btnsec21, .btnsec21:hover {
+  color: #000;
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
+  padding: 5px 0 0 0;
+  border-radius: 0;
+  text-align: center;
+}
+
+.sec21ph{
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
+  text-align: left;
+  color: #000;
+}
+
+/*End Section 21*/
+
+/* ========================================================== */
+/* 		               17. END PAGE AJUDA                       */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 		              18. BEGIN PAGE CHAT                       */
+/* ========================================================== */
+
+/*Begin Section 22*/
+.section22{
+  position: relative;
+  padding-top: 145px;
+  padding-bottom: 109px;
+  background: #E9F8DA;
+  background-size: cover;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.sec22card{
+  color: #fff;
+  background: #B5E8A1;
+  margin: 20px 20px;
+  padding: 32px;
+  border-radius: 13px;
+  text-align:center;
+}
+
+.sec22ph{
+  font-family: 'Poppins-Regular';
+  font-size: 16px;
+  color: #000;
+  text-align: left;
+}
+
+.sec22perguntas{
+  font-family: 'Poppins-Bold';
+  font-size: 20px;
+  line-height: 52px;
+  margin: 0;
+  padding: 0 0 5px 0;
+  text-align: left;
+  color: #038654;
+}
+
+.btnsec22, .btnsec22:hover {
+  font-family: 'Poppins-Regular';
+  font-size: 15px;
+  color: #000;
+  background-color: #B5E8A1;
+  border-color: #B5E8A1;
+  padding: 10px 20px;
+ }
+
+/* ========================================================== */
+/* 		               18. END PAGE AJUDA                       */
+/* ========================================================== */
 
 /* ========================================================== */
 /* 			             06. BEGIN FOOTER                         */
